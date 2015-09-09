@@ -1,0 +1,69 @@
+# Turn off the stupid startup message
+startup_message off
+# Always show the screen name at the bottom.
+caption always
+# Message to displace on visual bell.
+#vbell on
+vbell_msg "Excuse Me?"
+# Message to display on bell.
+bell_msg "Ding Dong (%t)"
+# Set hardcopy directory
+hardcopydir /export/home/cm230084
+# Append hardcopy files
+hardcopy_append on
+# Bind useful keys
+# Rlogin to sctesrv
+#bind 'R' colon "screen rlogin sctesrv"
+# Previous screen command
+bind 'P' colon "^p"
+# Bind keys to navigate split screens
+bind j focus down
+bind k focus up
+
+# Keep 1000 lines for scrolling
+defscrollback 1000
+
+# some notes on COLOR before explaining its use in
+# the commands caption, hardstatus, and sorendition.
+#
+# COLOR:  colors codes are combinations of
+# [attribute modifier] [color description]
+# the manual talks of "attribute/color modifiers".
+# see the manual, section "STRING ESCAPES".
+#
+# Color table:
+# 0 Black             .    leave color unchanged
+# 1 Red               b    blue
+# 2 Green             c    cyan
+# 3 Brown / yellow    d    default color
+# 4 Blue              g    green           b    bold
+# 5 Purple            k    blacK           B    blinking
+# 6 Cyan              m    magenta         d    dim
+# 7 White             r    red             r    reverse
+# 8 unused/illegal    w    white           s    standout
+# 9 transparent       y    yellow          u    underline
+#
+# note: "dim" is not mentioned in the manual.
+
+caption always "%?%{kw}%-Lw%?%{kr}%n*%f %t %?(%u)%?%?%{kw}%+Lw%? %{kr}%=%c %{kw}%d/%M/%Y"
+#hardstatus alwayslastline "%{b}[ %{B}%H %{b}][ %{w}%?%-Lw%?%{b}(%{W}%n*%f %t%?(%u)%?%{b})%{w}%?%+Lw%?%?%= %{b}][%{B} %d/%m %{W}%C%a %{b}]"
+
+# Other useful commands
+# activity
+# at
+# bind
+# bufferfile
+# log/logfile/logtstamp
+# monitor
+# multiuser
+# nethack
+# password
+# process
+# readbuf/writebuf/removebuf
+# readreg/paste/register
+# resize
+# sorendition
+# split
+ wall
+# TITLES
+

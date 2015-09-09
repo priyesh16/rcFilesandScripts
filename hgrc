@@ -1,0 +1,31 @@
+[extensions]
+mq= 
+
+[email]
+from=priyesh.vakayil@oracle.com
+
+[paths]
+on11update-gate=ssh://on11update-gate.us.oracle.com//export/on11update-gate
+on11update-clone=ssh://on11update-gate.us.oracle.com//export/on11update-clone
+on11update-closed=ssh://on11update-gate.us.oracle.com//export/on11update-gate/usr/closed
+on11update-closed-clone=ssh://on11update-gate.us.oracle.com//export/on11update-clone/usr/closed
+on11update-man=ssh://on11update-gate.us.oracle.com//export/on11update-gate/usr/man
+on11update-man-clone=ssh://on11update-gate.us.oracle.com//export/on11update-clone/usr/man
+
+[merge-tools]
+filemerge.gui=True
+filemerge.args=-a $base $local $other $output
+filemerge.priority=1
+filemerge.premerge=False
+
+meld.gui=True
+meld.priority=0
+meld.premerge=False
+
+gpyfm.gui=True
+gpyfm.priority=0
+gpyfm.premerge=False
+
+[ui]
+username=PRIYESH.VAKAYIL@ORACLE.COM,,, <priyesh.vakayil@oracle.com>
+style=/opt/onbld/etc/hgstyle
