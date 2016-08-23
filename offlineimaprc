@@ -1,0 +1,29 @@
+[general]
+ui = ttyui
+accounts = Work
+pythonfile=~/.mutt/offlineimap.py
+fsync = False
+
+[Account Work]
+localrepository = Work-Local
+remoterepository = Work-Remote
+status_backend = sqlite
+autorefresh = 0.6
+postsynchook =
+#quick = 10
+
+[Repository Work-Local]
+type = Maildir
+localfolders = /home/pri/mail/offlineimap/stbeehive_oracle
+
+[Repository Work-Remote]
+type = IMAP
+remoteuser = priyesh.vakayil@oracle.com
+remotehost = stbeehive.oracle.com
+remoteport = 993
+ssl = yes
+remotepasseval = get_imap_pwd()
+realdelete = no
+cert_fingerprint = 49546ad1007e2b45f1c3ba80a849a79f62ecf544
+keepalive = 60
+holdconnectionopen = yes

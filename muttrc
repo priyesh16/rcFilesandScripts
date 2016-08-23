@@ -1,0 +1,10 @@
+#My settings
+set from="priyesh.vakayil@oracle.com"
+set realname="priyesh"
+
+#imap server settings
+set folder="imaps://priyesh.vakayil@oracle.com@stbeehive.oracle.com/INBOX"
+
+#smtp server settings
+set smtp_url="smtps://priyesh.vakayil@oracle.com@stbeehive.oracle.com:465"
+
