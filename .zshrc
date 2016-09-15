@@ -17,7 +17,6 @@ antigen-bundle pjg/zsh-vim-plugin
 antigen-apply
 
 
-
 # BASICS
 
 # umask
@@ -789,3 +788,11 @@ alias opengrok='cd /software/nvidia_opengrok/opengrok'
 
 #vm for dragon
 alias vmshare='cd /home/pri/win_share'
+
+
+#my functions
+function newdir { mkdir -p $1 && cd $1; } 
+
+function findfile { find . | grep -i $1 }
+
+function findword { grep -nri $1 }
