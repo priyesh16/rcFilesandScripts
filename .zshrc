@@ -1,4 +1,6 @@
 # ANTIGEN
+# install ruby zsh and clone https://github.com/zsh-users/antigen.git
+# mv this .zsh and .zsh_history file to home directory and run command zsh
 
 # directory to store cloned antigen repositories
 export ADOTDIR=~/.zsh
